@@ -144,7 +144,7 @@
     $(document).ready(function () {
       $.ajax({
         type: "GET",
-        url: 'https://docs.google.com/spreadsheets/d/1peR8nwOPh8ZfJtA_aK9vfvoNPUQxprDLlkFskFA9vHs/gviz/tq?tqx=out:csv&sheet=Sheet2',
+        url: 'https://docs.google.com/spreadsheets/d/1FsCUcfhK0xHtekDlSRMQKrvWWTTP8u81lpJdViLwXPY/edit#gid=142966534',
         dataType: "text",
         success: function (csvData) {
           makeGeoJSON(csvData); 
@@ -172,7 +172,7 @@
                   'icon-image': [
                     'match',
                     ['get', 'type'],
-                    'garden', 'ghost-marker',
+                    'weekend', 'ghost-marker',
                     'custom-marker'
                   ]
                 }
