@@ -133,6 +133,10 @@
     
     map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
 
+    map.loadImage('ghost.png', function(error, image) {
+      map.addImage('ghost-marker', image);
+    }
+                  
     $(document).ready(function () {
       $.ajax({
         type: "GET",
@@ -161,7 +165,7 @@
                   'data': data
                 },
                 'layout': {
-                  'icon-image': 'custom-marker'
+                  'icon-image': 'ghost-marker'
                 }
               });
             })
