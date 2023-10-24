@@ -138,7 +138,7 @@
     });
 
     map.loadImage('icons8-pumpkin-48.png', function(error, image) {
-      map.addImage('ghost-marker', image);
+      map.addImage('custom-marker', image);
     });
                
     $(document).ready(function () {
@@ -173,7 +173,7 @@
                     'match',
                     ['get', 'type'],
                     'garden', 'ghost-marker',
-                    'customer-marker'
+                    'custom-marker'
                   ]
                 }
               });
