@@ -136,7 +136,11 @@
     map.loadImage('ghost.png', function(error, image) {
       map.addImage('ghost-marker', image);
     });
-                  
+
+    map.loadImage('icons8-pumpkin-48.png', function(error, image) {
+      map.addImage('ghost-marker', image);
+    });
+               
     $(document).ready(function () {
       $.ajax({
         type: "GET",
@@ -156,7 +160,7 @@
           locationData = data;
           map.on('load', function () {
             map.loadImage('icons8-pumpkin-48.png', function(error, image) {
-              map.addImage('custom-marker', image);
+              //map.addImage('custom-marker', image);
               map.addLayer({
                 'id': 'csvData',
                 'type': 'symbol',
