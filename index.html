@@ -165,7 +165,12 @@
                   'data': data
                 },
                 'layout': {
-                  'icon-image': 'ghost-marker'
+                  'icon-image': [
+                    'match',
+                    ['get', 'type'],
+                    'garden', 'ghost-marker',
+                    'customer-marker'
+                  ]
                 }
               });
             })
