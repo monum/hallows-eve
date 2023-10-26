@@ -182,7 +182,7 @@
             map.on('click', 'csvData', function (e) {
               var coordinates = e.features[0].geometry.coordinates.slice();
 
-              var description = '<h3>' + e.features[0].properties.Name + '</h3>' + '<h4>' + '<strong>' + 'Address: ' + '</strong>' + '<a href="' + e.features[0].properties.Link + '">' + e.features[0].properties.Address + '</a></h4>'
+              var description = '<h3>' + e.features[0].properties.Name + '</h3>' + '<h4>' + '<strong>' + 'Address: ' + '</strong>' + '<a target="_blank" rel="noopener noreferrer" href="' + e.features[0].properties.Link + '">' + e.features[0].properties.Address + '</a></h4>'
               + '<h4>' + '<strong>' + 'Time: ' + '</strong>' + e.features[0].properties.Time + '</h4>';
 
               // Ensure that if the map is zoomed out such that multiple
